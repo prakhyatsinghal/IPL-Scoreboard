@@ -1,18 +1,18 @@
-package io.javabrains.ipldashboard.controller;
+package com.ipl.scoreboard.controller;
 
 import java.time.LocalDate;
 import java.util.List;
 
+import com.ipl.scoreboard.model.Team;
+import com.ipl.scoreboard.repository.MatchRepository;
+import com.ipl.scoreboard.repository.TeamRepository;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import io.javabrains.ipldashboard.model.Match;
-import io.javabrains.ipldashboard.model.Team;
-import io.javabrains.ipldashboard.repository.MatchRepository;
-import io.javabrains.ipldashboard.repository.TeamRepository;
+import com.ipl.scoreboard.model.Match;
 
 @RestController
 @CrossOrigin

@@ -1,14 +1,12 @@
-package io.javabrains.ipldashboard.data;
+package com.ipl.scoreboard.data;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
+import com.ipl.scoreboard.model.Match;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import org.springframework.batch.item.ItemProcessor;
-
-import io.javabrains.ipldashboard.model.Match;
 
 public class MatchDataProcessor implements ItemProcessor<MatchInput, Match> {
 

@@ -1,4 +1,4 @@
-package io.javabrains.ipldashboard.data;
+package com.ipl.scoreboard.data;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -6,16 +6,14 @@ import java.util.Map;
 import javax.persistence.EntityManager;
 import javax.transaction.Transactional;
 
+import com.ipl.scoreboard.model.Team;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.batch.core.BatchStatus;
 import org.springframework.batch.core.JobExecution;
 import org.springframework.batch.core.listener.JobExecutionListenerSupport;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
-
-import io.javabrains.ipldashboard.model.Team;
 
 @Component
 public class JobCompletionNotificationListener extends JobExecutionListenerSupport {

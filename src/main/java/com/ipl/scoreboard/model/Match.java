@@ -1,4 +1,4 @@
-package io.javabrains.ipldashboard.model;
+package com.ipl.scoreboard.model;
 
 import java.time.LocalDate;
 
