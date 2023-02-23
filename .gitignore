@@ -25,3 +25,4 @@ target/
 
 ### React App ###
 src/Frontend/frontend/node_modules/
+node_modules
